@@ -2,6 +2,10 @@
 
 A desktop game for AI Fundamentals topic 14, Mini Hospital Supply Robot. **You drive a space ambulance** through procedurally generated orbital station floors. The campaign has 30 levels; the next level starts automatically after you reach the target ward. No patient data is used.
 
+![Orbital Ambulance map and three AI decisions](assets/project-preview.svg)
+
+The illustration shows the fixed 5×5 demonstration: BFS finds a six-move route, a noisy ALERT makes the hallway 23.7% likely to be free, and the MDP recommends Pause. The playable game generates its own maps and challenges.
+
 ## Start the game
 
 1. Download the repository ZIP from GitHub or clone it.
