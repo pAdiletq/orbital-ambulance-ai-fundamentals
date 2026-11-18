@@ -2,7 +2,7 @@
 
 A desktop game for AI Fundamentals topic 14, Mini Hospital Supply Robot. **You drive a space ambulance** through procedurally generated orbital station floors. The campaign has 30 levels; the next level starts automatically after you reach the target ward. No patient data is used.
 
-![Orbital Ambulance map and three AI decisions](assets/project-preview.svg)
+![Orbital Ambulance map and three AI decisions, 4K illustration](assets/project-preview.png)
 
 The illustration shows the fixed 5×5 demonstration: BFS finds a six-move route, a noisy ALERT makes the hallway 23.7% likely to be free, and the MDP recommends Pause. The playable game generates its own maps and challenges.
 
@@ -65,6 +65,18 @@ BFS computes a route from your current tile. HMM starts reporting after the thir
 ### Fixed 5×5 demonstration output
 
 `python demo.py` uses Ward A at `(4, 0)` and an `ALERT` sensor report. Its BFS route has **6 moves**. Bayes computes `P(free | ALERT) = 0.0492 / (0.0492 + 0.1584) = 23.7%`. The MDP compares `Q(Continue) = -12.89` with `Q(Pause) = +1.05` and recommends **PAUSE**. See [technical report](docs/TECHNICAL_REPORT.md) for the inputs and steps.
+
+## Repository map
+
+| Location | What it contains |
+|---|---|
+| `START_GAME.bat` | Double-click to start the desktop game on Windows |
+| `medbot_x.py` and `medbot_theme.wav` | Game code and soundtrack; keep them together |
+| `MEDBOT-X_Hospital_Supply_Robot.ipynb` | Google Colab edition |
+| `demo.py` | Reproducible 5×5 calculation example |
+| `test_medbot_x.py` | Algorithm and game checks |
+| `assets/` | 4K project illustration shown above |
+| `docs/` | Presentation, technical report, defense guide, and team statement |
 
 ## Submission material
 
